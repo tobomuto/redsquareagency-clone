@@ -1,0 +1,17 @@
+
+#intro__hero {
+    height: calc(70vh - 130px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-bottom: 9%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 40px;
+    h1 {
+        margin: 0;
+        font-family: 'Quattrocento', serif;
+        font-size: 2.3125em;
+        line-height: 45px;
+    }
+}
