@@ -1,0 +1,34 @@
+#header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: #fefefe;
+        font-weight: bold;
+    }
+    #header__logo {
+        width: 30px;
+        height: 30px;
+        background-color: #e31e3c;
+    }
+    .header__link {
+        &::after {
+            content: "";
+            width: 8px;
+            height: 13px;
+            display: inline-block;
+            position: relative;
+            top: 0;
+            margin-left: 10px;
+            opacity: 0.5;
+            background-image: url(../assets/arrow.svg);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 8px 13px;
+        }
+    }
+}
