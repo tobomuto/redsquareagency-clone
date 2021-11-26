@@ -1,34 +1,66 @@
 #header__nav {
-    display: flex;
-    justify-content: space-between;
     padding-top: 32px;
     padding-left: 25px;
     padding-right: 25px;
-    align-items: center;
-    a {
-        text-decoration: none;
-        color: #fefefe;
-        font-weight: bold;
-    }
-    #header__logo {
-        width: 30px;
-        height: 30px;
-        background-color: #e31e3c;
-    }
-    .header__link {
-        &::after {
-            content: "";
-            width: 8px;
-            height: 13px;
-            display: inline-block;
-            position: relative;
-            top: 0;
-            margin-left: 10px;
-            opacity: 0.5;
-            background-image: url(../assets/arrow.svg);
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: 8px 13px;
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: #fefefe;
+            font-weight: bold;
+            font-size: 17px;
         }
+        #header__logo {
+            width: 30px;
+            height: 30px;
+            background-color: #e31e3c;
+        }
+        .header__link {
+            &::after {
+                content: "";
+                width: 8px;
+                height: 13px;
+                display: inline-block;
+                position: relative;
+                top: 0;
+                margin-left: 10px;
+                opacity: 0.5;
+                background-image: url(../assets/arrow.svg);
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-size: 8px 13px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:640px){
+    #header__nav {
+        padding-top: 72px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (min-width:1025px){
+    #header__nav {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        .header__container {
+            width: 83%;
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    #header__nav {
+        padding-left: 105px;
+        padding-right: 105px;
     }
 }
