@@ -6,7 +6,7 @@ export const Intro = () => {
     return (
         <div id="intro__hero">
             <h1>
-                The agency for what comes next.
+                The agency for<br/> what comes next.
             </h1>
         </div>
     )
