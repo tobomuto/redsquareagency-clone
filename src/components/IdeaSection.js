@@ -10,6 +10,7 @@ const IdeaSection = () => {
             <p class="idea-section__paragraph">
                 Red Square believes in rigorous development of brand strategy and whip-smart execution. We make all sorts of things. Things that move markets, compel audiences and sell product. We help great brands create what comes next.
             </p>
+            <div className="divider"></div>
         </section>
     )
 }

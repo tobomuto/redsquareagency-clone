@@ -18,6 +18,7 @@ const ClientsSection = () => {
                     <li key={client.id}>{client.name}</li>
                 )}
             </ul>
+            <div className="divider"></div>
         </section>
     )
 }
