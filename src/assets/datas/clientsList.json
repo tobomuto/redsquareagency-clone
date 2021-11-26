@@ -1,0 +1,92 @@
+[
+    {   
+        "id": 1,
+        "name": "Cherokee Casinos",
+        "group": 1
+    },
+    {   
+        "id": 2,
+        "name": "Flipboard",
+        "group": 1
+    },
+    {   
+        "id": 3,
+        "name": "Foxwoods",
+        "group": 1
+    },
+    {   
+        "id": 4,
+        "name": "Glanbia Nutritionals",
+        "group": 1
+    },
+    {   
+        "id": 5,
+        "name": "Google",
+        "group": 1
+    },
+    {   
+        "id": 6,
+        "name": "Hard Rock",
+        "group": 1
+    },
+    {   
+        "id": 7,
+        "name": "Hibbett Sports",
+        "group": 1
+    },
+    {   
+        "id": 8,
+        "name": "Hilton Worldwide",
+        "group": 1
+    },
+    {   
+        "id": 9,
+        "name": "Jack Daniel’s",
+        "group": 2
+    },
+    {   
+        "id": 10,
+        "name": "Nescafé",
+        "group": 2
+    },
+    {   
+        "id": 11,
+        "name": "New York Pride",
+        "group": 2
+    },
+    {   
+        "id": 12,
+        "name": "Patreon",
+        "group": 2
+    },
+    {   
+        "id": 13,
+        "name": "Rivers Casino",
+        "group": 2
+    },
+    {   
+        "id": 14,
+        "name": "Snickers",
+        "group": 2
+    },
+    {   
+        "id": 15,
+        "name": "Southern Comfort",
+        "group": 2
+    },
+    {   
+        "id": 16,
+        "name": "The University of Alabama",
+        "group": 2
+    },
+    {   
+        "id": 17,
+        "name": "Twix",
+        "group": 2
+    },
+    {   
+        "id": 18,
+        "name": "Wind Creek Hospitality",
+        "group": 2
+    }
+]
