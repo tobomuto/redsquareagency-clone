@@ -10,3 +10,17 @@
             display: inline-block;
         }
 }
+
+@media screen and (min-width:1024px){
+    .img-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .img-container {
+        padding-left: 105px;
+        padding-right: 105px;
+    }
+}
