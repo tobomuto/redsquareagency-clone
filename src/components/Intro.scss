@@ -45,3 +45,13 @@
         }
     }
 }
+
+@media screen and (min-width:1440px){
+    #intro__hero {
+        height: calc(65vh - 193px) !important;
+        h1 {
+            font-size: 100px;
+            line-height: 100px;
+        }
+    }
+}
