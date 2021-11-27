@@ -1,7 +1,7 @@
 #clients-section {
+    padding: 0 25px;
+    margin-bottom: 7.63889vw;
     .clients-section__container {
-        padding: 0 25px;
-        margin-bottom: 7.63889vw;
         h3 {
             color: #858585;
             font-size: 18px;
@@ -21,33 +21,44 @@
 }
 
 @media screen and (min-width:640px){
-    .clients-section__container {
+    #clients-section {
         padding: 0 50px !important;
-        .clients-section__lists {
-            display: flex;
-            width: 74%;
-            justify-content: space-between;
+        .clients-section__container {
+            .clients-section__lists {
+                display: flex;
+                width: 74%;
+                justify-content: space-between;
+            }
         }
     }
 }
 
-@media screen and (min-width:1025px){
-    .clients-section__container {
+@media screen and (min-width:1024px){
+    #clients-section {
         display: flex;
-        justify-content: center;
-        h3 {
-            min-width: 30%;
-        }
-        .clients-section__lists {
+        flex-direction: column;
+        .clients-section__container {
             display: flex;
-            width: 50%;
-            justify-content: space-between;
-            ul {
-                li {
-                    font-size: 1.66667vw;
-                    line-height: 3.33333vw;
+            justify-content: center;
+            h3 {
+                min-width: 30%;
+            }
+            .clients-section__lists {
+                display: flex;
+                width: 50%;
+                justify-content: space-between;
+                ul {
+                    li {
+                        font-size: 1.66667vw;
+                        line-height: 3.33333vw;
+                    }
                 }
             }
+        }
+        .divider {
+            width: 83%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
