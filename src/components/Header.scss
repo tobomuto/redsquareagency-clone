@@ -41,10 +41,21 @@
         padding-top: 72px;
         padding-left: 50px;
         padding-right: 50px;
+        .header__container {
+            .header__link {
+                &::after {
+                    width: 9px;
+                    height: 16px;
+                    top: 2px;
+                    background-size: 9px 16px;
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 
-@media screen and (min-width:1025px){
+@media screen and (min-width:1024px){
     #header__nav {
         padding-top: 100px;
         display: flex;
