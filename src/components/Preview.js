@@ -21,13 +21,13 @@ const Preview = () => {
         
         function toggleActive (element, index, maxIndex) {
             setTimeout(function(){
-            element.classList.add(activeClass);
-            setTimeout(function(){
-                element.classList.remove(activeClass);
-                if (index === maxIndex) {
-                runLoop();
-                }
-            }, wait);
+                element.classList.add(activeClass);
+                setTimeout(function(){
+                    element.classList.remove(activeClass);
+                    if (index === maxIndex) {
+                    runLoop();
+                    }
+                }, wait);
             }, wait * index);  
         }
         
@@ -35,8 +35,8 @@ const Preview = () => {
             let allItems = document.getElementsByClassName(itemClass);
         
             for (let index = 0; index < allItems.length; index++) {
-            let element = allItems[index];
-            toggleActive(element, index, allItems.length - 1);
+                let element = allItems[index];
+                toggleActive(element, index, allItems.length - 1);
             }
         }
         
