@@ -11,7 +11,7 @@ const Footer = () => {
         <footer>
             <div className="footer__infos">
                 <div className="footer__email">
-                    <a href="mailto:hi@rsq.com" class="panel">
+                    <a href="mailto:hi@rsq.com" className="panel">
                         <h4>Let’s talk.</h4> 
                         <span>hi@rsq.com</span>
                     </a>
@@ -32,7 +32,10 @@ const Footer = () => {
             </div>
             <div className="img-cont">
                 <img src={imageOne} alt="blured"/>
-                <p>Work</p>
+                <p className="img-cont__work">Work</p>
+                <p className="img-cont__all-projects">All Projects</p>
+
+
             </div>
         </footer>
     )

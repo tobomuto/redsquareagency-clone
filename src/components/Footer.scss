@@ -51,22 +51,98 @@ footer {
     .img-cont {
         position: relative;
         text-align: center;
-        overflow: hidden;
+        overflow-y: hidden;
         height: 170px;
         img {
             width: 100%;
+            border-radius: 4px;
             // height: 213px;
             // object-position: 0px 20px;
-            filter: blur(10px);
+            // filter: blur(10px);
             opacity: .7;
             transform: scale(1.1);
             object-fit: cover;
+            cursor: pointer;
+            transition: opacity .5s;
+            &:hover {
+                opacity: 1;
+            }
         }
-        p {
+        .img-cont__work {
             position: absolute;
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
+            &::after {
+                content: "";
+                width: 8px;
+                height: 13px;
+                display: inline-block;
+                position: relative;
+                top: 0;
+                margin-left: 10px;
+                opacity: 0.5;
+                background-image: url(../assets/arrow.svg);
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-size: 8px 13px;
+            }
         }
+        .img-cont__all-projects {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:640px){
+    footer {
+        .footer__infos {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 157px;
+            .footer__email {
+                a {
+                    font-size: 64px;
+                }
+            }
+        }
+    }
+    .img-cont {
+        position: relative;
+        text-align: center;
+        height: 170px;
+        font-size: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 128px !important;
+        img {
+            transform: scale(1) !important;
+        }
+        .img-cont__work {
+            top: 20% !important;
+            left: auto !important;
+            right: 15% !important;
+            transform: translate(0) !important;
+            &::after {
+                width: 9px !important;
+                height: 16px !important;
+                top: 2px !important;
+                background-size: 9px 16px !important;
+                opacity: 1 !important;
+            }
+        }
+        .img-cont__all-projects {
+            position: absolute;
+            top: 20% !important;
+            left: 15% !important;
+            display: inline-block !important;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .img-cont {
+        padding-left: 105px ;
+        padding-right: 105px ;
     }
 }
