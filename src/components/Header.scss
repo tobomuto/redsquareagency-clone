@@ -13,9 +13,36 @@
             font-size: 17px;
         }
         #header__logo {
-            width: 30px;
-            height: 30px;
-            background-color: #e31e3c;
+            .header__logo-triangle {
+                display: none;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .header__logo-circle {
+                display: none;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .header__logo-square {
+                display: inline-block;
+                opacity: 0;
+                position: relative;
+                width: 30px;
+                height: 30px;
+                background-color: #e31e3c;
+                span {
+                    position: absolute;
+                    display: none;
+                    opacity: 0;
+                    left: 40px;
+                    font-weight: bold;
+                    font-size: 26px;
+                    
+                }
+            }
+
         }
         .header__link {
             &::after {
