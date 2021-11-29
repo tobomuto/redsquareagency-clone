@@ -11,6 +11,7 @@ const IdeaSection = () => {
 
     const ideaTitleRef = useRef();
     const ideaParaRef = useRef();
+    const dividerRef = useRef();
 
     useEffect(() => {
         gsap.from(ideaTitleRef.current, {
@@ -32,6 +33,14 @@ const IdeaSection = () => {
                 trigger: ".idea-section__paragraph"
             }
         })
+        gsap.from(dividerRef.current, {
+            scaleX:0, transformOrigin:'left center',
+            duration: 2,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: dividerRef.current
+            }
+        })
     });
 
     return (
@@ -42,7 +51,7 @@ const IdeaSection = () => {
             <p className="idea-section__paragraph" ref={ideaParaRef}>
                 Red Square believes in rigorous development of brand strategy and whip-smart execution. We make all sorts of things. Things that move markets, compel audiences and sell product. We help great brands create what comes next.
             </p>
-            <div className="divider"></div>
+            <div className="divider" ref={dividerRef}></div>
         </section>
     )
 }
