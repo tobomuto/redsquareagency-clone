@@ -13,7 +13,8 @@ export const Intro = () => {
     const q = gsap.utils.selector(sentenceRef);
 
     useEffect(() => {
-        gsap.from(q(".word"), {delay: 1.9, opacity: 0, duration: 0.5, stagger: 0.2, ease: "power1.out"})
+        gsap.from(q(".word"), {delay: 1.9, opacity: 0, duration: 0.5, stagger: 0.2, ease: "power1.out"});
+        gsap.from(sentenceRef.current, {delay: 3.6, transform: 'translate3d(0,20vh,0)', ease: "power1.out", duration: 1});
     });
 
     return (
